@@ -116,4 +116,11 @@ Thumbs.db
 
 .trash
 ```
+
+# 手機應用
+1. 下載GitJournal
+2. 連接Git帳號
+3. 選用Repositories
+*備註：查看更改都沒問題，記得不要多台共用就好*
+
 ---

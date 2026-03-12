@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#藍色",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 592.5
+    "width": 477.5
   },
   "right": {
     "id": "c96a13116c19f276",
@@ -195,18 +196,18 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "3b235e9eb7bc72ec",
+  "active": "204446171867e793",
   "lastOpenFiles": [
-    "Knowledge/Knowledge 學習筆記.md",
-    "Knowledge/Obsidian 共用方法/Git 自動備份.md",
-    "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
-    "Inbox/2026-03-12.md",
-    "Knowledge/Flutter",
     "Inbox/每日筆記模板.md",
-    "Project/Project 專案相關文件.md",
+    "Inbox/2026-03-12.md",
     "Inbox/Inbox 臨時筆記.md",
-    "2026-03-12.md",
+    "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
+    "Knowledge/Obsidian 共用方法/Git 自動備份.md",
+    "Knowledge/Knowledge 學習筆記.md",
     "Knowledge/Obsidian 共用方法/20260312094225.png",
+    "Knowledge/Flutter",
+    "Project/Project 專案相關文件.md",
+    "2026-03-12.md",
     "未命名.canvas",
     "未命名.base",
     "Archive/Archive 歷史筆記.md",
