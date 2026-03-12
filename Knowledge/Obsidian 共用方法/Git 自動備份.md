@@ -1,11 +1,19 @@
+# Git設定
+	建立相關Repositories 
+	名字看懂就好 Remote Add. Push 好後就好
+	
+![[20260312094225.png]]
+# Obsidian Git
+	去下載Git外掛，並設定如下
+```json
 {
   "commitMessage": "vault backup: {{date}}",
   "autoCommitMessage": "vault backup: {{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 10,
-"autoPushInterval": 10,
-"autoPullInterval": 10,
+  "autoPushInterval": 10,
+  "autoPullInterval": 10,
   "autoPullOnBoot": true,
   "autoCommitOnlyStaged": false,
   "disablePush": false,
@@ -49,16 +57,8 @@
     "dateTimeFormatCustomString": "YYYY-MM-DD HH:mm",
     "dateTimeTimezone": "viewer-local",
     "coloringMaxAge": "1y",
-    "colorNew": {
-      "r": 255,
-      "g": 150,
-      "b": 150
-    },
-    "colorOld": {
-      "r": 120,
-      "g": 160,
-      "b": 255
-    },
+    "colorNew": {"r":255,"g":150,"b":150},
+    "colorOld": {"r":120,"g":160,"b":255},
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
     "gutterSpacingFallbackLength": 5,
@@ -66,3 +66,8 @@
     "lastShownDateTimeFormatOptions": "date"
   }
 }
+```
+	設定完成後無編寫會自動更新
+
+# 其他電腦如何應用
+	
