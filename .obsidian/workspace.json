@@ -175,7 +175,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -195,8 +195,12 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "a485c1adbb439a65",
+  "active": "6e1380c9df92f080",
   "lastOpenFiles": [
+    "Project/Gus Emso/APP",
+    "Project/Gus Emso",
+    "Project/Gus Ems/APP",
+    "Project/Gus Ems/Web",
     "Knowledge/Obsidian 共用方法/20260312094225.png",
     "Assest/Image/2026-03-12.md",
     "Document/Document 整理文件.md",
@@ -222,9 +226,6 @@
     "未命名.canvas",
     "未命名.base",
     "Archive/Archive 歷史筆記.md",
-    "Knowledge/Obsidian 共用方法",
-    "新增 文字文件.txt",
-    "Document",
     "Document.md"
   ]
 }
