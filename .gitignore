@@ -1,0 +1,10 @@
+# Obsidian cache
+.obsidian/cache
+.obsidian/workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Trash
+.trash
