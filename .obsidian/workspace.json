@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Archive 歷史筆記.md",
+                "file": "Knowledge/Obsidian 共用方法/Git 自動備份.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Archive 歷史筆記"
+              "title": "Git 自動備份"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Archive 歷史筆記.md",
+                "file": "Knowledge/Obsidian 共用方法/Git 自動備份.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Archive 歷史筆記 的反向連結"
+              "title": "Git 自動備份 的反向連結"
             }
           },
           {
@@ -162,8 +162,19 @@
               "icon": "lucide-list",
               "title": "大綱"
             }
+          },
+          {
+            "id": "4801a847b5342bca",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -185,16 +196,17 @@
   },
   "active": "204446171867e793",
   "lastOpenFiles": [
-    "Knowledge/Knowledge 學習筆記.md",
-    "Knowledge/Obsidian 共用方法/20260312094225.png",
-    "Knowledge/Obsidian 共用方法/Git 自動備份.md",
     "Inbox/Inbox 臨時筆記.md",
-    "Knowledge/Obsidian 共用方法",
     "Project/Project 專案相關文件.md",
-    "Document/Document 整理文件.md",
-    "Archive/Archive 歷史筆記.md",
-    "新增 文字文件.txt",
+    "Knowledge/Knowledge 學習筆記.md",
+    "Knowledge/Obsidian 共用方法/Git 自動備份.md",
     "未命名.canvas",
+    "未命名.base",
+    "Knowledge/Obsidian 共用方法/20260312094225.png",
+    "Archive/Archive 歷史筆記.md",
+    "Knowledge/Obsidian 共用方法",
+    "Document/Document 整理文件.md",
+    "新增 文字文件.txt",
     "Document",
     "Document.md",
     "Archive",

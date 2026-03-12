@@ -4,8 +4,8 @@
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 10,
-"autoPushInterval": 10,
-"autoPullInterval": 10,
+  "autoPushInterval": 10,
+  "autoPullInterval": 10,
   "autoPullOnBoot": true,
   "autoCommitOnlyStaged": false,
   "disablePush": false,
@@ -41,11 +41,11 @@
     "statusBar": "disabled"
   },
   "lineAuthor": {
-    "show": true,
+    "show": false,
     "followMovement": "inactive",
-    "authorDisplay": "initials",
+    "authorDisplay": "hide",
     "showCommitHash": false,
-    "dateTimeFormatOptions": "date",
+    "dateTimeFormatOptions": "hide",
     "dateTimeFormatCustomString": "YYYY-MM-DD HH:mm",
     "dateTimeTimezone": "viewer-local",
     "coloringMaxAge": "1y",
@@ -61,7 +61,7 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 5,
+    "gutterSpacingFallbackLength": 0,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   }
