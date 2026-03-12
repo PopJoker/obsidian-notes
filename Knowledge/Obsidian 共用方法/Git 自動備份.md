@@ -1,9 +1,7 @@
 # Git 設定
-建立相關 Repositories  
+建立相關 Repositories  ![[20260312094225.png]]
 名字看懂就好，Remote Add / Push 好後就可以。
-目前Remote ```
-[Obsidan Notes GitHub](https://github.com/PopJoker/obsidian-notes.git)
-![[20260312094225.png]]
+目前Remote  [Obsidan Notes GitHub](https://github.com/PopJoker/obsidian-notes.git)
 
 ---
 
