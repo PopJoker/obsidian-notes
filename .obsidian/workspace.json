@@ -155,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "followCursor": false,
+                "file": "Inbox/2026-03-12.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大綱"
+              "title": "2026-03-12 的大綱"
             }
           },
           {
@@ -174,7 +175,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -194,7 +195,7 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "204446171867e793",
+  "active": "3b235e9eb7bc72ec",
   "lastOpenFiles": [
     "Knowledge/Knowledge 學習筆記.md",
     "Knowledge/Obsidian 共用方法/Git 自動備份.md",
