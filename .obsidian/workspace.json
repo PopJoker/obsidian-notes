@@ -178,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 459.5
+    "width": 323.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +194,7 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "204446171867e793",
+  "active": "4801a847b5342bca",
   "lastOpenFiles": [
     "Inbox/每日筆記模板.md",
     "Inbox/2026-03-12.md",
