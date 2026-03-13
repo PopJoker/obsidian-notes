@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Archive 歷史筆記.md",
-                "mode": "preview",
+                "file": "Knowledge/Flutter/Flutter Position語法 錯誤與問題討論.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Archive 歷史筆記"
+              "title": "Flutter Position語法 錯誤與問題討論"
             }
           }
         ],
@@ -254,6 +254,8 @@
   },
   "active": "4c5893eed6ceefc5",
   "lastOpenFiles": [
+    "Archive/Archive 歷史筆記.md",
+    "Knowledge/Flutter/Flutter Position語法 錯誤與問題討論.md",
     "Inbox/2026-03-13.md",
     "Inbox/每日筆記模板.md",
     "Inbox/Inbox 臨時筆記.md",
@@ -288,7 +290,6 @@
     "Project/Project 專案相關文件.md",
     "2026-03-12.md",
     "未命名.canvas",
-    "Archive/Archive 歷史筆記.md",
     "Document.md"
   ]
 }
