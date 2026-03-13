@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Flutter/Flutter Position語法 錯誤與問題討論.md",
-                "mode": "source",
+                "file": "Inbox/2026-03-13.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flutter Position語法 錯誤與問題討論"
+              "title": "2026-03-13"
             }
           }
         ],
@@ -254,9 +254,10 @@
   },
   "active": "4c5893eed6ceefc5",
   "lastOpenFiles": [
-    "Archive/Archive 歷史筆記.md",
-    "Knowledge/Flutter/Flutter Position語法 錯誤與問題討論.md",
+    "Knowledge/Flutter/Flutter Positioned語法 錯誤與問題討論.md",
     "Inbox/2026-03-13.md",
+    "Assest/Image/Pasted image 20260313170201.png",
+    "Archive/Archive 歷史筆記.md",
     "Inbox/每日筆記模板.md",
     "Inbox/Inbox 臨時筆記.md",
     "Inbox/2026-03-12.md",
