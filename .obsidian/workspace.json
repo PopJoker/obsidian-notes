@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/Tapo C200 to VPS [go2rtc] to Flutter[flutter_webrtc].md",
-                "mode": "source",
+                "file": "Inbox/SPM-3 電表 RS-485 通訊 (讀取寄存器).md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tapo C200 to VPS [go2rtc] to Flutter[flutter_webrtc]"
+              "title": "SPM-3 電表 RS-485 通訊 (讀取寄存器)"
             }
           }
         ]
@@ -197,8 +197,9 @@
   },
   "active": "68f57b8fa47c999c",
   "lastOpenFiles": [
-    "Assest/Image/TapoC200.png",
     "Inbox/Tapo C200 to VPS [go2rtc] to Flutter[flutter_webrtc].md",
+    "Inbox/SPM-3 電表 RS-485 通訊 (讀取寄存器).md",
+    "Assest/Image/TapoC200.png",
     "Inbox/Meney 規劃想法.md",
     "Assest/Image/Tapo200.png",
     "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
