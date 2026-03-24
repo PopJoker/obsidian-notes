@@ -58,4 +58,4 @@ flowchart TD
 ```
 
 TapoC200
-![[TapoC200.png|407]]
+![[TapoC200.png|416]]
