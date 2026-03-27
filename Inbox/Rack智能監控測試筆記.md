@@ -1,0 +1,5 @@
+2026-03-27 11:01:07 [INFO] Rack 1 ACTIVE_FIRST mode started
+2026-03-27 11:01:14 [INFO] Rack 2 ACTIVE_FIRST mode started
+2026-03-27 11:01:21 [INFO] Rack 3 ACTIVE_FIRST mode started
+
+2026-03-27 11:18:32 [INFO] Rack 1 ACTIVE Done,delta_v=0.007
