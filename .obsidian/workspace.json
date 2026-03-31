@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7fc35a088f477cd4",
+        "id": "88fd47d80b48557f",
         "type": "tabs",
         "children": [
           {
-            "id": "85994967a217c118",
+            "id": "ad92a4d22f7508c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/HirackEMS 整合通訊規劃.md",
+                "file": "Inbox/Module B 20260331 會議.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HirackEMS 整合通訊規劃"
+              "title": "Module B 20260331 會議"
             }
           }
         ]
@@ -196,12 +196,14 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "85994967a217c118",
+  "active": "ad92a4d22f7508c6",
   "lastOpenFiles": [
+    "Inbox/Meney 規劃想法.md",
+    "Inbox/Inbox 臨時筆記.md",
+    "Inbox/HirackEMS 整合通訊規劃.md",
     "Inbox/每日筆記模板.md",
     "Inbox/2026-03-31.md",
     "Inbox/台勵福紀錄 20260326.md",
-    "Inbox/HirackEMS 整合通訊規劃.md",
     "Inbox/Module B 20260331 會議.md",
     "Inbox/2026-03-30.md",
     "Inbox/2026-03-27.md",
@@ -209,8 +211,6 @@
     "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
     "Inbox/未命名",
     "Inbox/Rack智能監控測試筆記.md",
-    "Inbox/Inbox 臨時筆記.md",
-    "Inbox/Meney 規劃想法.md",
     "Inbox/2026-03-26.md",
     "Inbox/2026-03-25.md",
     "Inbox/2026-03-24.md",
