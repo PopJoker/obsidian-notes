@@ -4,3 +4,4 @@
 	- ### Influx 對應 8088
 - # 主要修改
 	- ### 通訊讀取與寫入方式
+	- ### Communicator Modbus部分寫入
