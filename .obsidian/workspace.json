@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2026-03-31.md",
+                "file": "Inbox/每日筆記模板.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-31"
+              "title": "每日筆記模板"
             }
           }
         ]
@@ -198,12 +198,13 @@
   },
   "active": "ad92a4d22f7508c6",
   "lastOpenFiles": [
+    "Inbox/2026-04-01.md",
+    "Inbox/2026-03-31.md",
     "Inbox/Module B 20260331 會議.md",
     "Inbox/Meney 規劃想法.md",
     "Inbox/Inbox 臨時筆記.md",
     "Inbox/HirackEMS 整合通訊規劃.md",
     "Inbox/每日筆記模板.md",
-    "Inbox/2026-03-31.md",
     "Inbox/台勵福紀錄 20260326.md",
     "Inbox/2026-03-30.md",
     "Inbox/2026-03-27.md",
@@ -227,7 +228,6 @@
     "Inbox/格斯小屋Live Steam與表頭監控/Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc).md",
     "Inbox/2026-03-17.md",
     "Inbox/2026-03-18.md",
-    "Inbox/2026-03-20.md",
     "Knowledge/Hirack Gus-Hirack(Modbus)",
     "Assest/Image/TapoC200.png",
     "Inbox/格斯小屋Live Steam與表頭監控",
