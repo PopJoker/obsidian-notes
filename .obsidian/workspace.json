@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
+                "file": "Inbox/2026-04-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "目前功能介紹 2026_03_12"
+              "title": "2026-04-08"
             }
           }
         ]
@@ -196,8 +196,10 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "6e1380c9df92f080",
+  "active": "a3ce7a5a325b1f21",
   "lastOpenFiles": [
+    "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
+    "Document/電池櫃類型/高壓儲能.md",
     "Project/Gus Install",
     "Archive/4月/1th week/2026-04-01.md",
     "Archive/4月/2th week",
@@ -218,7 +220,6 @@
     "Archive/3月/4th week",
     "Assest/Image/2026-03-12.md",
     "Document/新用戶流程.md",
-    "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
     "Inbox/2026-04-08.md",
     "Assest/Image/Pasted image 20260408155750.png",
     "Assest/Image/螢幕擷取畫面 2026-03-16 165931 1.png",
@@ -240,7 +241,6 @@
     "2026/03",
     "2026",
     "Knowledge/Hirack Gus-Hirack(Modbus)",
-    "Inbox/格斯小屋Live Steam與表頭監控",
     "Assest/Image/Tapo200.png",
     "Inbox/未命名.canvas",
     "Assest/Image/20260312094225 1.png",
