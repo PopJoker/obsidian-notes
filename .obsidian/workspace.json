@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2026-04-08.md",
+                "file": "Inbox/目前專案彙整.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-08"
+              "title": "目前專案彙整"
             }
           }
         ]
@@ -198,6 +198,16 @@
   },
   "active": "a3ce7a5a325b1f21",
   "lastOpenFiles": [
+    "Inbox/Inbox 臨時筆記.md",
+    "Inbox/目前專案彙整.md",
+    "Inbox/Meney 規劃想法.md",
+    "Inbox/HirackEMS 整合通訊規劃.md",
+    "Inbox/每日筆記模板.md",
+    "Inbox/台勵福紀錄 20260326.md",
+    "Inbox/Module B 20260331 會議.md",
+    "Inbox/Rack智能監控測試筆記.md",
+    "Inbox/2026-04-08.md",
+    "Inbox/FAE APP 後續流程與規劃.md",
     "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
     "Document/電池櫃類型/高壓儲能.md",
     "Project/Gus Install",
@@ -220,22 +230,12 @@
     "Archive/3月/4th week",
     "Assest/Image/2026-03-12.md",
     "Document/新用戶流程.md",
-    "Inbox/2026-04-08.md",
     "Assest/Image/Pasted image 20260408155750.png",
     "Assest/Image/螢幕擷取畫面 2026-03-16 165931 1.png",
-    "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
-    "Knowledge/Flutter/Flutter Positioned語法 錯誤與問題討論.md",
-    "Inbox/每日筆記模板.md",
-    "Inbox/台勵福紀錄 20260326.md",
-    "Inbox/格斯小屋Live Steam與表頭監控/SPM-3 電表 RS-485 通訊 (讀取寄存器).md",
-    "Inbox/FAE APP 後續流程與規劃.md",
-    "Inbox/格斯小屋Live Steam與表頭監控/Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc).md",
     "Assest/Image/20260312142214.png",
     "Assest/Image/螢幕擷取畫面 2026-03-16 165931.png",
     "Assest/Image/Pasted image 20260313170201.png",
     "Assest/Image/TapoC200.png",
-    "Document/Document 整理文件.md",
-    "Document/Server/Mariadb.md",
     "Knowledge/Obsidian 共用方法/20260312094225.png",
     "Inbox/未命名",
     "2026/03",
