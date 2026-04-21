@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
+                "file": "Inbox/格斯小屋Live Steam與表頭監控/Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flutter 前期規劃時用的更新語言方式"
+              "title": "Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc)"
             }
           }
         ]
@@ -198,6 +198,7 @@
   },
   "active": "a3ce7a5a325b1f21",
   "lastOpenFiles": [
+    "Knowledge/Flutter/Flutter 前期規劃時用的更新語言方式.md",
     "螢幕擷取畫面 2026-03-16 165931.png",
     "Inbox/Rack智能監控測試筆記.md",
     "Inbox/Module B 20260331 會議.md",
@@ -244,7 +245,6 @@
     "Assest/Image/Tapo200.png",
     "Inbox/未命名.canvas",
     "Assest/Image/20260312094225 1.png",
-    "Assest/Image/20260312142142.png",
     "未命名.canvas"
   ]
 }
