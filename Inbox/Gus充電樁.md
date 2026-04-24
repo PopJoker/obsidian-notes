@@ -29,4 +29,5 @@ graph TD
     Cache -.->|回傳 Modbus 暫存數據| K
     E -.->|透過 Nginx 傳送至手機| I
 ```
-![[ChatGPT Image 2026年4月24日 下午04_29_42.png|697]]
+
+![[Pasted image 20260424175715.png|697]]

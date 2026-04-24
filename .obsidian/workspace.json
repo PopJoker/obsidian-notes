@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Gus充電樁"
             }
+          },
+          {
+            "id": "e53012d85d2e3e1f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Assest/Image/Pasted image 20260424175715.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260424175715"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,11 +209,13 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "a3ce7a5a325b1f21",
+  "active": "e53012d85d2e3e1f",
   "lastOpenFiles": [
-    "ChatGPT Image 2026年4月24日 下午04_29_42.png",
-    "Inbox/2026-04-24.md",
     "Inbox/Gus充電樁.md",
+    "Inbox/2026-04-24.md",
+    "Assest/Image/Pasted image 20260424175715.png",
+    "螢幕擷取畫面 2026-03-16 165931.png",
+    "ChatGPT Image 2026年4月24日 下午04_29_42.png",
     "Inbox/Inbox 臨時筆記.md",
     "Inbox/格斯小屋Live Steam與表頭監控/Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc).md",
     "Inbox/目前專案彙整.md",
@@ -225,7 +240,6 @@
     "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
     "Archive/3月/3th week/2026-03-16.md",
     "Archive/3月/3th week/2026-03-20.md",
-    "螢幕擷取畫面 2026-03-16 165931.png",
     "Archive/4月/3th week",
     "Project/Gus Install",
     "Archive/4月/2th week",
@@ -242,9 +256,7 @@
     "Knowledge/Obsidian 共用方法/20260312094225.png",
     "Inbox/未命名",
     "2026/03",
-    "Assest/Image/Tapo200.png",
     "Inbox/未命名.canvas",
-    "Assest/Image/20260312094225 1.png",
     "未命名.canvas"
   ]
 }
