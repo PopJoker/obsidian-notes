@@ -25,12 +25,14 @@
             "id": "e53012d85d2e3e1f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Assest/Image/Pasted image 20260424175715.png"
+                "file": "Inbox/Meney 規劃想法.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260424175715"
+              "icon": "lucide-file",
+              "title": "Meney 規劃想法"
             }
           }
         ],
@@ -211,12 +213,13 @@
   },
   "active": "e53012d85d2e3e1f",
   "lastOpenFiles": [
+    "Inbox/Meney 教學影片企劃流程.md",
+    "Inbox/Inbox 臨時筆記.md",
+    "Assest/Image/Pasted image 20260424175715.png",
     "Inbox/Gus充電樁.md",
     "Inbox/2026-04-24.md",
-    "Assest/Image/Pasted image 20260424175715.png",
     "螢幕擷取畫面 2026-03-16 165931.png",
     "ChatGPT Image 2026年4月24日 下午04_29_42.png",
-    "Inbox/Inbox 臨時筆記.md",
     "Inbox/格斯小屋Live Steam與表頭監控/Tapo C200 to VPS (go2rtc) to Flutter(flutter_webrtc).md",
     "Inbox/目前專案彙整.md",
     "Inbox/每日筆記模板.md",
@@ -239,7 +242,6 @@
     "Archive/4月/1th week/2026-03-30.md",
     "Project/Gus Ems/APP/目前功能介紹 2026_03_12.md",
     "Archive/3月/3th week/2026-03-16.md",
-    "Archive/3月/3th week/2026-03-20.md",
     "Archive/4月/3th week",
     "Project/Gus Install",
     "Archive/4月/2th week",
