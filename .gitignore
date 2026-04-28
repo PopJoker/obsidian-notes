@@ -1,10 +1,16 @@
-# Obsidian cache
-.obsidian/cache
-.obsidian/workspace
+# Quartz 核心 (必刪)
+node_modules/
+.quartz-cache/
+public/
 
-# OS files
+# Obsidian 設定 (保留你的外觀與外掛，但不備份暫存檔)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache/
+.trash/
+
+# 作業系統雜物
 .DS_Store
 Thumbs.db
 
-# Trash
-.trash
+# 為了防止編碼問題，請確保檔案存為 UTF-8
