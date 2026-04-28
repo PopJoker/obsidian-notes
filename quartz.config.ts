@@ -16,8 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    // baseOrigin: "https://PopJoker.github.io",
-    baseUrl: "obsidian-notes",
+    baseUrl: "popJoker.github.io/obsidian-notes",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
