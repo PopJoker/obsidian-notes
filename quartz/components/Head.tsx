@@ -58,7 +58,7 @@ export default (() => {
 
         {/* ===== PWA 核心 ===== */}
         <link rel="manifest" href={manifestPath} />
-        <meta name="theme-color" content="#ad83da" />
+        <meta name="theme-color" content="#ffffff" />
 
         {/* iOS 支援 */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
