@@ -1,4 +1,3 @@
-> https://webems.gustech.com.tw/fae/
 # FAE Website 專案架構與開發重點筆記
 
 此專案是一個基於 **Vue 3** 框架開發的前端應用程式，旨在提供 FAE（現場應用工程師）所需的技術支持工具及管理界面。
