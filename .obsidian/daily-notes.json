@@ -1,4 +1,4 @@
 {
-  "folder": "Inbox",
-  "template": "Inbox/每日筆記模板"
+  "folder": "content/Inbox",
+  "template": "content/Inbox/每日筆記模板"
 }
