@@ -1,11 +1,21 @@
+# auto_archive.py
+# pip install pyinstaller
+# pyinstaller --onefile --console content\auto_archive.py
 import os
 import re
 import shutil
-import math  # 修正：引入正確的數學模組
+import math 
+import sys
 from datetime import datetime, timedelta
 
 # ================== 設定路徑 ==================
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if getattr(sys, 'frozen', False):
+    # 如果是 .exe 執行檔，抓取該 .exe 所在的目錄
+    BASE_DIR = os.path.dirname(os.path.abspath(sys.executable))
+else:
+    # 如果是一般的 .py 腳本，抓取腳本所在的目錄
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 INBOX_DIR = os.path.join(BASE_DIR, "Inbox")
 ARCHIVE_DIR = os.path.join(BASE_DIR, "Archive")
 

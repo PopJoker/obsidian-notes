@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['c:/Users/G11407007/Desktop/pop/obsidian/content/auto_archive.py'],
+    ['content\\auto_archive.py'],
     pathex=[],
     binaries=[],
     datas=[],
