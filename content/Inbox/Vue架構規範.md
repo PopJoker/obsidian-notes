@@ -1,2 +1,0 @@
-Pinia
-Router
