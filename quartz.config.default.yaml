@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: zh-TW
-  baseUrl: quartz.jzhao.xyz
+  baseUrl: PopJoker.github.io/obsidian-notes
   ignorePatterns:
     - private
     - templates
