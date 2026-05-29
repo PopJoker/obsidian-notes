@@ -1,16 +1,13 @@
-# Quartz 核心 (必刪)
-node_modules/
-.quartz-cache/
-public/
-
-# Obsidian 設定 (保留你的外觀與外掛，但不備份暫存檔)
-.obsidian/workspace
-.obsidian/workspace.json
-.obsidian/cache/
-.trash/
-
-# 作業系統雜物
 .DS_Store
-Thumbs.db
-
-# 為了防止編碼問題，請確保檔案存為 UTF-8
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
