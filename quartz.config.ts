@@ -2,23 +2,21 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
+ * Quartz Configuration (PopNote Edition)
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "PopNote",
+    pageTitle: "PopNote",           
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-TW",             
     baseUrl: "PopJoker.github.io/obsidian-notes",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    // 💡 移除了引發錯誤的 dateType / defaultDateType，讓系統走預設值
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -54,6 +52,7 @@ const config: QuartzConfig = {
     },
   },
   plugins: {
+    // 💡 回歸目前核心支援的陣列 (Array) 結構，並直接使用 import 的 Plugin
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
@@ -88,8 +87,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
     ],
   },
 }
