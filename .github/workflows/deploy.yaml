@@ -28,10 +28,10 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci
+      - name: Install Quartz plugins
+        run: npx quartz plugin install # 安裝 Quartz plugins
       - name: Build Quartz
-        run: |
-          npx quartz create --action sync
-          npx quartz build
+        run: npx quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
