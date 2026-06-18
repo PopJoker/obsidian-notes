@@ -1,2 +1,0 @@
--  LoStatus 0x3000 to 0x0 / 0x0 to 0x3000
--  group else extra current,voltage delta with special else sort to colom and tracert relationship
