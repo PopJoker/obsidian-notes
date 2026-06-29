@@ -118,9 +118,8 @@ Thumbs.db
 ```
 
 # 手機應用
-1. 下載GitJournal
-2. 連接Git帳號
-3. 選用Repositories
+已經開 quartz 可以直接上網看
+https://popjoker.github.io/obsidian-notes/
 *備註：查看更改都沒問題，記得不要多台共用就好*
 
 ---
