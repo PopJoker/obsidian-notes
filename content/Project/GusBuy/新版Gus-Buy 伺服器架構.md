@@ -3,10 +3,10 @@
 
 ### 1. 生態系統配置與拓撲優化
 
-![[Pasted image 20260703132108.png|424]]
+![[Pasted image 20260703144925.png|332]]
 
 * **前端靜態外殼與 PWA (Vue 3 + Vite)：**
-    * **架構調整：** **嚴禁**使用 Python 中間件直接掛載前端靜態檔案。前端靜態資源與 PWA 清單、Service Worker 應部署於高效能的 **Nginx / Caddy 反向代理伺服器** 或 **CDN**。
+    * **架構調整：** **嚴禁**使用 Python 中間件直接掛載前端靜態檔案。前端靜態資源與 PWA 清單、Service Worker 應部署於高效能的 **Nginx**。
     * **PWA 能效：** 專注於工業級/電商核心商品數據（如 LTO 三元電芯基本規格、製造商代碼、離線購物車）的 Service Worker 本地快取，提升弱網環境下案場工程師與採購人員的類似原生 App 體驗。
 * **後端與中間件 API Gateway (Python FastAPI)：**
     * **架構職能：** 核心業務邏輯的唯一進入點（Single Entry Point）。負責複雜商業邏輯計算、跨系統分散式交易協調、金流/發票 API 介接、Redis 分散式鎖調度，以及**寫入非同步操作稽核日誌 (Audit Log)**。
@@ -31,49 +31,45 @@
 
 ## 三、 資料庫結構設計 (Relational-BaaS Hybrid Schema)
 
-> **最高標準修正：**
-> 1. 所有金額與價格型態由浮點數 (`float`) 全面重構為精度精確的 **`Decimal`** 字串或高精度整數（以分為單位儲存），嚴禁因浮點數運算導致財務對帳產生 0.00001 的誤差。
-> 2. 移除原訂單總表的單一時間戳 `order_serve_date`，改用獨立的狀態軌跡表追蹤完整生命週期 KPI。
-> 3. 引入實體序號資產狀態表，解決流浪序號與設備生命週期追溯問題。
-
 ### 1. User Table (用戶表)
 *完全由 Appwrite User Service 託管，包含內建 Google JWT 驗證與自訂 Roles/Teams 欄位。*
 
 ### 2. Product Table (商品表)
-| 欄位名稱 | 型態 | 約束/說明 |
-| :--- | :--- | :--- |
-| `product_id` | string | 主鍵 (UUIDv4) |
-| `category_id` | string | 外鍵，關聯至 `Category Table` |
-| `product_name` | string | 產品名稱 |
-| `product_category_tag`| string | 產品類別標籤（如：LTO三元、固態、鈉離子） |
-| `product_description` | text | 產品描述與詳細規格參數 (Spec) |
-| `product_remaining_quantity` | integer| 產品可用剩餘庫存（受 Redis 樂觀鎖/分散式鎖保護） |
-| `product_price` | decimal(12,2)| 產品標準單價（轉換為高精度字串儲存，防浮點數誤差） |
-| `is_project_quote` | boolean | 是否為專案報價商品。True 則前台顯示「專案洽詢」並強制分流 |
-| `product_moq` | integer | 產品最低起訂量 (Minimum Order Quantity) |
-| `product_companyname` | string | 製造公司代號 / 供應商代碼 |
-| `product_tags` | array | 搜尋標籤 / 篩選器索引陣列 |
-| `product_imgurl` | string | 圖片儲存服務 (Appwrite Storage) 存取網址 |
+| 欄位名稱                         | 型態            | 約束/說明                            |
+| :--------------------------- | :------------ | :------------------------------- |
+| `product_id`                 | string        | 主鍵 (UUIDv4)                      |
+| `category_id`                | string        | 外鍵，關聯至 `Category Table`          |
+| `product_name`               | string        | 產品名稱                             |
+| `product_category_tag`       | string        | 產品類別標籤（如：LTO三元、固態、鈉離子）           |
+| `product_description`        | text          | 產品描述與詳細規格參數 (Spec)               |
+| `product_remaining_quantity` | integer       | 產品可用剩餘庫存（受 Redis 樂觀鎖/分散式鎖保護）     |
+| `product_price`              | decimal(12,2) | 產品標準單價（轉換為高精度字串儲存，防浮點數誤差）        |
+| `currency`                   | string        | 幣別 (如：`TWD`, `USD`)，預留匯率轉換       |
+| `is_project_quote`           | boolean       | 是否為專案報價商品。True 則前台顯示「專案洽詢」並強制分流  |
+| `product_moq`                | integer       | 產品最低起訂量 (Minimum Order Quantity) |
+| `product_companyname`        | string        | 製造公司代號 / 供應商代碼                   |
+| `product_tags`               | array         | 搜尋標籤 / 篩選器索引陣列                   |
+| `product_imgurl`             | string        | 圖片儲存服務 (Appwrite Storage) 存取網址   |
 
 ### 3. Order Table (訂單總表)
-| 欄位名稱 | 型態 | 約束/說明 |
-| :--- | :--- | :--- |
-| `order_id` | string | 主鍵 (UUIDv4) |
-| `user_id` | string | 外鍵項目，購買人帳戶 ID |
-| `order_pay` | string | 付款方式：`ONLINE_CARD` (線上刷卡) / `OFFLINE_TRANSFER` (線下轉帳) |
-| `currency` | string | 幣別 (如：`TWD`, `USD`)，預留跨境或大額組件採購需求 |
-| `total_amount` | decimal(12,2)| 訂單應付總金額 (經中間件加總或 PM 調整後的最終值) |
-| `discount_amount` | decimal(12,2)| 專案折讓總金額 (預設為 0.00，供財務與審計核對) |
-| `tax_amount` | decimal(12,2)| 營業稅額 (發票開立核心依據) |
-| `order_status` | string | 狀態機：`PENDING_PAY` (待付款) / `PM_ESTIMATING` (PM核估中) / `FINANCE_VERIFY` (待會計確認) / `PAID` (已付款) / `SHIPPING` (出貨中) / `COMPLETED` (已結案) / `REFUND_REVIEW` (退換貨審查中) |
-| `refund_status` | string | 退款狀態機：`NO_REFUND` (無退款) / `PARTIAL_REFUND` (部分退款) / `FULL_REFUND` (全額退款) |
-| `order_officer_pm_id` | string | 負責此 B2B 訂單的 PM 員工 ID |
-| `invoice_number` | string | 電子發票號碼 (由中間件非同步呼叫第三方發票系統後回填) |
-| `shipping_address` | string | 送貨地址 / 案場確切 GPS 與位置資訊 |
-| `shipping_contact_name`| string | 案場收件現場聯絡人姓名 |
-| `shipping_contact_phone`| string | 案場收件現場聯絡人電話 |
-| `site_condition` | text | 案場實體環境狀況（由 PM 線下場勘後於後台結構化填入） |
-| `shipping_notes` | text | 物流與配送備註（PM 可根據場勘吊車、地形等狀況進行優化更新） |
+| 欄位名稱                     | 型態            | 約束/說明                                                                                                                                                         |
+| :----------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `order_id`               | string        | 主鍵 (UUIDv4)                                                                                                                                                   |
+| `user_id`                | string        | 外鍵項目，購買人帳戶 ID                                                                                                                                                 |
+| `order_pay`              | string        | 付款方式：`ONLINE_CARD` (線上刷卡) / `OFFLINE_TRANSFER` (線下轉帳)                                                                                                         |
+| `currency`               | string        | 幣別 (如：`TWD`, `USD`)，預留跨境或大額組件採購需求                                                                                                                             |
+| `total_amount`           | decimal(12,2) | 訂單應付總金額 (經中間件加總或 PM 調整後的最終值)                                                                                                                                  |
+| `discount_amount`        | decimal(12,2) | 專案折讓總金額 (預設為 0.00，供財務與審計核對)                                                                                                                                   |
+| `tax_amount`             | decimal(12,2) | 營業稅額 (發票開立核心依據)                                                                                                                                               |
+| `order_status`           | string        | 狀態機：`PENDING_PAY` (待付款) / `PM_ESTIMATING` (PM核估中) / `FINANCE_VERIFY` (待會計確認) / `PAID` (已付款) / `SHIPPING` (出貨中) / `COMPLETED` (已結案) / `REFUND_REVIEW` (退換貨審查中) |
+| `refund_status`          | string        | 退款狀態機：`NO_REFUND` (無退款) / `PARTIAL_REFUND` (部分退款) / `FULL_REFUND` (全額退款)                                                                                      |
+| `order_officer_pm_id`    | string        | 負責此 B2B 訂單的 PM 員工 ID                                                                                                                                          |
+| `invoice_number`         | string        | 電子發票號碼 (由中間件非同步呼叫第三方發票系統後回填)                                                                                                                                  |
+| `shipping_address`       | string        | 送貨地址 / 案場確切 GPS 與位置資訊                                                                                                                                         |
+| `shipping_contact_name`  | string        | 案場收件現場聯絡人姓名                                                                                                                                                   |
+| `shipping_contact_phone` | string        | 案場收件現場聯絡人電話                                                                                                                                                   |
+| `site_condition`         | text          | 案場實體環境狀況（由 PM 線下場勘後於後台結構化填入）                                                                                                                                  |
+| `shipping_notes`         | text          | 物流與配送備註（PM 可根據場勘吊車、地形等狀況進行優化更新）                                                                                                                               |
 
 ### 4. Order_Items_Table (訂單明細表 - 單品拆解)
 | 欄位名稱 | 型態 | 約束/說明 |
@@ -148,7 +144,7 @@
 
 為應對高併發下庫存扣減導致的**更新丟失 (Lost Update)**，系統引入 Redis 分散式鎖，並在金流介接中引入分散式交易保護機制。
 
-![[Pasted image 20260703135812.png]]
+![[Pasted image 20260703135812.png|377]]
 
 1.  **結帳請求攔截：** 客戶在前端點擊結帳，Vue 將購物車品項、數量與配送資訊送至 Python FastAPI 中間件。
 2.  **分散式鎖與原子扣減：** 中間件針對購物車內的 `product_id` 向 Redis Cluster 請求**分散式鎖 (Redis Lock)** 或執行原子操作（如 `DECRBY`）。確認 `product_remaining_quantity >= quantity`。若庫存不足，立即熔斷並向前端拋出「商品已售罄」異常，拒絕後續一切交易。
