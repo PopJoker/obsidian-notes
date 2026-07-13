@@ -1,4 +1,6 @@
+
 參考 [Ray Liu](https://blog.liu-yucheng.com/2026/04/08/ecommerce-architecture-series-part1-platform-overview/) [冰河](https://juejin.cn/post/7417746324387037235) 加入併發處理 與伺服器架構整體修改
+
 ## 一、 技術棧與部署架構
 
 ### 1. 生態系統配置與拓撲優化
@@ -119,11 +121,12 @@
 | `created_at` | datetime | 日誌不可變寫入時間戳 |
 
 ### 8. Category Table (分類表)
-| 欄位名稱 | 型態 | 約束/說明 |
-| :--- | :--- | :--- |
-| `category_id` | string | 主鍵 |
-| `category_name` | string | 類別名稱（如：固態系列、三元儲能、外部代採） |
-| `category_source` | string | 來源屬性：`OWNED` (自營) / `VENDOR` (外部供應商) / `JOINT_AGENCY` (聯合代理) |
+| 欄位名稱            | 型態      | 約束/說明                                        |
+| :-------------- | :------ | :------------------------------------------- |
+| `category_id`   | string  | 主鍵                                           |
+| `category_name` | string  | 類別名稱（如：固態系列、三元儲能、外部代採）                       |
+| `category_item` | string  | 來源屬性（鋰鈦酸鋰 (LTO) 電芯, 三元鋰 (NCM) 電芯, 智慧儲能與動力模組） |
+| `category_step` | integer | 階層數                                          |
 
 ### 9. Banner Table (廣告橫幅表)
 | 欄位名稱 | 型態 | 約束/說明 |
