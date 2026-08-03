@@ -1,4 +1,7 @@
 [
   "obsidian-git",
-  "obsidian-textgenerator-plugin"
+  "obsidian-textgenerator-plugin",
+  "obsidian-reminder-plugin",
+  "obsidian-full-calendar",
+  "ical"
 ]
