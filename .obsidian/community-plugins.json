@@ -1,7 +1,5 @@
 [
   "obsidian-git",
   "obsidian-textgenerator-plugin",
-  "obsidian-reminder-plugin",
-  "obsidian-full-calendar",
-  "ical"
+  "obsidian-reminder-plugin"
 ]
