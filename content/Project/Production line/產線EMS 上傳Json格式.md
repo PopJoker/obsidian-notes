@@ -95,4 +95,18 @@ var payloadObject = new
 	... //後續省略 格式目前定義 最多到V16
 };
 ```
+### CombineAll
+``` json
+var payloadObject = new
+{
+    stage = "Combine-All",
+    tagfield = new
+    {
+        corepackBarcode = corepackBarcode,
+        cellBarcode = cellBarcode,
+        packBarcode = packBarcode,
+        ... //後續省略 根據後面製成可以自由新增刪減
+    },
+};
+```
 ---
