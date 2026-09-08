@@ -1,5 +1,5 @@
 ---
-title: Maverick's Digital Garden
+title: Maverick's Online Note
 layout: home
 ---
 # Dev Knowledge Base
