@@ -1,3 +1,4 @@
+``` bash
 rasp@gus-field:~ $ sudo journalctl -b | grep -iE "fail|error|warn"
 Sep 13 14:10:20 gus-field rpi-resize-swap-file[411]: mkswap: /var/swap: warning: wiping old swap signature.
 Sep 13 14:10:20 gus-field rpi-resize-swap-file[411]: mkswap: /var/swap: warning: wiping old swap signature.
@@ -30,37 +31,50 @@ Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609226158+
 Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609255343+08:00" level=info msg="skip loading plugin" error="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1
 Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.824347806+08:00" level=info msg="skip loading plugin" error="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
 Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929334917+08:00" level=info msg="skip loading plugin" error="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or directory: skip plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1
+
 Sep 14 10:25:21 gus-field tailscaled[1145]: health(warnable=warming-up): ok
-Sep 14 10:25:28 gus-field wireplumber[1263]: default: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
-Sep 14 10:25:30 gus-field containerd[1147]: time="2026-09-14T10:25:30.019130862+08:00" level=warning msg="waiting for response from boltdb open" plugin=bolt
-Sep 14 10:25:30 gus-field tailscaled[1145]: logtail: upload: log upload of 359 bytes compressed failed: Post "https://log.tailscale.com/c/tailnode.log.tailscale.io/604efd93ee1be3a59b80d6feb3d9cf314194599a5afb7d57341e630450af7445": net/http: TLS handshake timeout
-Sep 14 10:25:30 gus-field tailscaled[1145]: Received error: fetch control key: Get "https://controlplane.tailscale.com/key?v=142": context deadline exceeded
-Sep 14 10:25:30 gus-field tailscaled[1145]: health(warnable=login-state): error: You are logged out. The last login error was: fetch control key: Get "https://controlplane.tailscale.com/key?v=142": context deadline exceeded
-Sep 14 10:25:31 gus-field tailscaled[1145]: health(warnable=login-state): ok
-Sep 14 10:25:42 gus-field containerd[1147]: time="2026-09-14T10:25:42.161248169+08:00" level=info msg="skip loading plugin" error="failed to check mkfs.erofs availability: failed to run mkfs.erofs --help: exec: \"mkfs.erofs\": executable file not found in $PATH: skip plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1
-Sep 14 10:25:42 gus-field containerd[1147]: time="2026-09-14T10:25:42.171192540+08:00" level=info msg="starting cri plugin" config="{\"containerd\":{\"defaultRuntimeName\":\"runc\",\"runtimes\":{\"runc\":{\"runtimeType\":\"io.containerd.runc.v2\",\"runtimePath\":\"\",\"PodAnnotations\":null,\"ContainerAnnotations\":null,\"options\":{\"BinaryName\":\"\",\"CriuImagePath\":\"\",\"CriuWorkPath\":\"\",\"IoGid\":0,\"IoUid\":0,\"NoNewKeyring\":false,\"Root\":\"\",\"ShimCgroup\":\"\",\"SystemdCgroup\":false},\"privileged_without_host_devices\":false,\"privileged_without_host_devices_all_devices_allowed\":false,\"cgroupWritable\":false,\"baseRuntimeSpec\":\"\",\"cniConfDir\":\"\",\"cniMaxConfNum\":0,\"snapshotter\":\"\",\"sandboxer\":\"podsandbox\",\"io_type\":\"\"}},\"ignoreBlockIONotEnabledErrors\":false,\"ignoreRdtNotEnabledErrors\":false},\"cni\":{\"binDir\":\"\",\"binDirs\":[\"/opt/cni/bin\"],\"confDir\":\"/etc/cni/net.d\",\"maxConfNum\":1,\"setupSerially\":false,\"confTemplate\":\"\",\"ipPref\":\"\",\"useInternalLoopback\":false},\"enableSelinux\":false,\"selinuxCategoryRange\":1024,\"maxContainerLogLineSize\":16384,\"disableApparmor\":false,\"restrictOOMScoreAdj\":false,\"disableProcMount\":false,\"unsetSeccompProfile\":\"\",\"tolerateMissingHugetlbController\":true,\"disableHugetlbController\":true,\"device_ownership_from_security_context\":false,\"ignoreImageDefinedVolumes\":false,\"netnsMountsUnderStateDir\":false,\"enableUnprivilegedPorts\":true,\"enableUnprivilegedICMP\":true,\"enableCDI\":true,\"cdiSpecDirs\":[\"/etc/cdi\",\"/var/run/cdi\"],\"drainExecSyncIOTimeout\":\"0s\",\"ignoreDeprecationWarnings\":null,\"containerdRootDir\":\"/var/lib/containerd\",\"containerdEndpoint\":\"/run/containerd/containerd.sock\",\"rootDir\":\"/var/lib/containerd/io.containerd.grpc.v1.cri\",\"stateDir\":\"/run/containerd/io.containerd.grpc.v1.cri\"}"
-Sep 14 10:25:42 gus-field containerd[1147]: time="2026-09-14T10:25:42.171648595+08:00" level=info msg="skip loading plugin" error="skip plugin: tracing endpoint not configured" id=io.containerd.tracing.processor.v1.otlp type=io.containerd.tracing.processor.v1
-Sep 14 10:25:42 gus-field containerd[1147]: time="2026-09-14T10:25:42.171677558+08:00" level=info msg="skip loading plugin" error="skip plugin: tracing endpoint not configured" id=io.containerd.internal.v1.tracing type=io.containerd.internal.v1
-Sep 14 10:26:00 gus-field dockerd[1678]: time="2026-09-14T10:26:00.144076300+08:00" level=error msg="error unmounting container" container=7513c00895fce8ab35b46aae9fa249331c659f336e20ce8990ce655919358882 error="layer not mounted"
-Sep 14 10:26:00 gus-field dockerd[1678]: time="2026-09-14T10:26:00.182690786+08:00" level=error msg="error unmounting container" container=dea2e85149108591234b3e53b0257cd9eb21f3dd6705c228ecbb5bf320848288 error="layer not mounted"
-Sep 14 10:26:00 gus-field dockerd[1678]: time="2026-09-14T10:26:00.244781463+08:00" level=error msg="error unmounting container" container=8b3f9edf0f4cc88795bf41c638980c95db804e92afae7e62ddba166613a4aa09 error="layer not mounted"
-Sep 14 10:26:01 gus-field dockerd[1678]: time="2026-09-14T10:26:01.758776709+08:00" level=info msg="Deleting nftables IPv4 rules" error="exit status 1" output="Error: Could not process rule: No such file or directory\ndelete table ip docker-bridges"
-Sep 14 10:26:01 gus-field dockerd[1678]: time="2026-09-14T10:26:01.786782669+08:00" level=info msg="Deleting nftables IPv6 rules" error="exit status 1" output="Error: Could not process rule: No such file or directory\ndelete table ip6 docker-bridges"
-Sep 14 10:26:03 gus-field dockerd[1678]: time="2026-09-14T10:26:03.378603923+08:00" level=warning msg="Failed deleting service host entries to the running container: open : no such file or directory"
-Sep 14 10:26:03 gus-field dockerd[1678]: time="2026-09-14T10:26:03.673368363+08:00" level=warning msg="Failed deleting service host entries to the running container: open : no such file or directory"
-Sep 14 10:26:03 gus-field dockerd[1678]: time="2026-09-14T10:26:03.841572501+08:00" level=warning msg="Failed deleting service host entries to the running container: open : no such file or directory"
-Sep 14 10:26:04 gus-field dockerd[1678]: time="2026-09-14T10:26:04.337831228+08:00" level=warning msg="error locating sandbox id 674f43faebb661bd9dd28c5e49c8191cce2b266cba66f0d323eaaa01a14f1008: sandbox 674f43faebb661bd9dd28c5e49c8191cce2b266cba66f0d323eaaa01a14f1008 not found"
-Sep 14 10:26:04 gus-field dockerd[1678]: time="2026-09-14T10:26:04.337901310+08:00" level=warning msg="error locating sandbox id 85dde8bfb6fd25c6c831c701f786ca9fe912565f78ce3c892650918c9cc184cb: sandbox 85dde8bfb6fd25c6c831c701f786ca9fe912565f78ce3c892650918c9cc184cb not found"
-Sep 14 10:26:04 gus-field dockerd[1678]: time="2026-09-14T10:26:04.337927467+08:00" level=warning msg="error locating sandbox id 6061966e3ab02194e079c667ebdf157743179b10f23991c1731d43a4454d4a8b: sandbox 6061966e3ab02194e079c667ebdf157743179b10f23991c1731d43a4454d4a8b not found"
-Sep 14 10:26:04 gus-field tailscaled[1145]: logtail: upload succeeded after 1 failures and 34s
-Sep 14 10:26:07 gus-field containerd[1147]: time="2026-09-14T10:26:07.728752570+08:00" level=warning msg="error from *cgroupsv2.Manager.EventChan" error="failed to add inotify watch for \"/sys/fs/cgroup/system.slice/docker-8b3f9edf0f4cc88795bf41c638980c95db804e92afae7e62ddba166613a4aa09.scope/memory.events\": no such file or directory"
-Sep 14 10:26:07 gus-field containerd[1147]: time="2026-09-14T10:26:07.864104636+08:00" level=warning msg="error from *cgroupsv2.Manager.EventChan" error="failed to add inotify watch for \"/sys/fs/cgroup/system.slice/docker-7513c00895fce8ab35b46aae9fa249331c659f336e20ce8990ce655919358882.scope/memory.events\": no such file or directory"
-Sep 14 10:26:08 gus-field containerd[1147]: time="2026-09-14T10:26:08.022024598+08:00" level=warning msg="error from *cgroupsv2.Manager.EventChan" error="failed to add inotify watch for \"/sys/fs/cgroup/system.slice/docker-dea2e85149108591234b3e53b0257cd9eb21f3dd6705c228ecbb5bf320848288.scope/memory.events\": no such file or directory"
-Sep 14 10:26:10 gus-field dockerd[1678]: time="2026-09-14T10:26:10.297650688+08:00" level=warning msg="WARNING: No memory limit support"
-Sep 14 10:26:10 gus-field dockerd[1678]: time="2026-09-14T10:26:10.297687402+08:00" level=warning msg="WARNING: No swap limit support"
-Sep 14 10:26:14 gus-field cloud-init[684]: 2026-09-14 02:26:14,608 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
-Sep 14 10:26:32 gus-field xdg-desktop-por[2666]: Failed to load RealtimeKit property: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.RealtimeKit1 was not provided by any .service files
-Sep 14 10:26:32 gus-field xdg-desktop-por[2666]: Failed to load RealtimeKit property: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.RealtimeKit1 was not provided by any .service files
-Sep 14 10:26:32 gus-field xdg-desktop-por[2666]: Failed to load RealtimeKit property: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.RealtimeKit1 was not provided by any .service files
-Sep 14 10:26:32 gus-field xdg-desktop-portal-wlr[2716]: 2026/09/14 10:26:32 [ERROR] - xdpw: Could not find render node
-Sep 14 10:26:32 gus-field xdg-desktop-portal-wlr[2716]: 2026/09/14 10:26:32 [ERROR] - xdpw: Could not find render node
+```
+``` bash
+rasp@gus-field:~ $ sudo journalctl --since "2026-09-13 14:10:00" --until "2026-09-13 14:15:00" | grep -iE "docker|containerd|layer|sandbox"
+Sep 13 14:10:19 gus-field kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+Sep 13 14:10:23 gus-field kernel: Bluetooth: HCI socket layer initialized
+Sep 13 14:10:23 gus-field kernel: Bluetooth: L2CAP socket layer initialized
+Sep 13 14:10:23 gus-field kernel: Bluetooth: SCO socket layer initialized
+Sep 13 14:10:34 gus-field systemd[1]: Starting docker.socket - Docker Socket for the API...
+Sep 13 14:10:34 gus-field systemd[1]: Listening on docker.socket - Docker Socket for the API.
+Sep 13 14:10:36 gus-field kernel: Bluetooth: BNEP socket layer initialized
+Sep 13 14:10:37 gus-field kernel: Bluetooth: RFCOMM TTY layer initialized
+Sep 13 14:10:37 gus-field kernel: Bluetooth: RFCOMM socket layer initialized
+Sep 13 14:10:42 gus-field systemd[1]: Starting containerd.service - containerd container runtime...
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.014766417+08:00" level=info msg="starting containerd" revision=77c84241c7cbdd9b4eca2591793e3d4f4317c590 version=v2.2.3
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.363565065+08:00" level=info msg="loading plugin" id=io.containerd.content.v1.content type=io.containerd.content.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.516088528+08:00" level=info msg="loading plugin" id=io.containerd.image-verifier.v1.bindir type=io.containerd.image-verifier.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.516130862+08:00" level=info msg="loading plugin" id=io.containerd.internal.v1.opt type=io.containerd.internal.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.581155899+08:00" level=info msg="loading plugin" id=io.containerd.warning.v1.deprecations type=io.containerd.warning.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.581184102+08:00" level=info msg="loading plugin" id=io.containerd.mount-handler.v1.erofs type=io.containerd.mount-handler.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.581198806+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609020102+08:00" level=info msg="skip loading plugin" error="no scratch file generator: skip plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609037250+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609226158+08:00" level=info msg="skip loading plugin" error="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609242936+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609255343+08:00" level=info msg="skip loading plugin" error="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.609264676+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.824347806+08:00" level=info msg="skip loading plugin" error="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.824384102+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.native type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.872626361+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overlayfs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929278510+08:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929334917+08:00" level=info msg="skip loading plugin" error="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or directory: skip plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929350065+08:00" level=info msg="loading plugin" id=io.containerd.event.v1.exchange type=io.containerd.event.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929376361+08:00" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgroups type=io.containerd.monitor.task.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929677176+08:00" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type=io.containerd.metadata.v1
+Sep 13 14:10:55 gus-field containerd[1147]: time="2026-09-13T14:10:55.929711176+08:00" level=info msg="metadata content store policy set" policy=shared
+```
+判斷卡死 需做系統看門狗 -260914
+sudo nano /boot/firmware/config.txt
+	dtparam=watchdog=on
+sudo apt-get update && sudo apt-get install watchdog -y
+sudo nano /etc/watchdog.conf
+	watchdog-device = /dev/watchdog 
+	watchdog-timeout = 15 
+	max-load-1 = 24
+sudo systemctl enable --now watchdog
